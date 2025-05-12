@@ -1,0 +1,25 @@
+.about-me {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-me.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.icon {
+  color: #007bff; /* Adjust color as needed */
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}

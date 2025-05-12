@@ -1,0 +1,95 @@
+.testimonials-section {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.testimonials-marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Đây là container chính cho phần chạy */
+.testimonials-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  animation: marquee 18s linear infinite;
+  will-change: transform;
+}
+
+/* Khi hover vào container cha thì animation dừng */
+.testimonials-marquee-wrapper:hover .testimonials-container {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonial-card {
+  min-width: 300px;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.window-buttons {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  display: flex;
+  gap: 6px;
+}
+
+.window-buttons span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.testimonial-content {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.testimonial-name {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-position {
+  font-size: 0.9rem;
+  color: #666;
+}

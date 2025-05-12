@@ -1,0 +1,25 @@
+.jinda-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: white;
+  padding: 2rem 0;
+}
+
+.jinda-track {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  font-size: 4rem;
+  font-weight: 700; /* Tăng độ đậm */
+  color: rgba(0, 0, 0, 0.1); /* Tăng độ đậm từ 0.05 lên 0.1 */
+  letter-spacing: 0.1em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

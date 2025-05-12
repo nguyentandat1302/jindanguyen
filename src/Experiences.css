@@ -1,0 +1,125 @@
+.experience-wrapper {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Center the timeline */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-left: 3px solid #ddd;
+  max-width: 600px;
+}
+
+/* Timeline item zigzag left/right */
+.timeline-item {
+  position: relative;
+  margin: 60px 0;
+  display: flex;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+.timeline-item:hover .content-box {
+  transform: scale(1.02);
+}
+
+/* Dot in the middle */
+.timeline-dot {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 4px solid #000;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.timeline-dot.active {
+  transform: translateX(-50%) scale(1.4);
+  background: black;
+}
+
+/* Content left/right */
+.timeline-item.left .content-box {
+  margin-right: auto;
+  margin-left: 0;
+  text-align: right;
+}
+
+.timeline-item.right .content-box {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
+}
+
+.content-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  width: fit-content;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.content-box.expanded {
+  background: #f9f9f9;
+}
+
+.company {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.details ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.details li {
+  margin-bottom: 10px;
+}
+
+.tech-stack {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-chip {
+  background: #000;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.icon {
+  color: #007bff; /* Adjust color as needed */
+  margin-right: 8px;
+}
