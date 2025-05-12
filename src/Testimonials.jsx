@@ -6,7 +6,7 @@ const testimonials = [
     id: 1,
     content:
       "His work was exactly what we needed, and he was outstanding to work with.",
-    name: "Freshet Manager @ Dell Technologies",
+    name: "Fresher Manager @ Dell Technologies",
     position: "BE Delphonse",
   },
   {
