@@ -9,6 +9,8 @@ import JinDaNguyen from "./JinDaNguyen";
 import Contact from "./Contact";
 import MatrixEffect from "./MatrixEffect";
 import Footer from "./Footer";
+import avatar from '../assets/datlatao.jpg';
+
 
 import "./App.css";
 import { FaLinkedin, FaGithub, FaAt, FaRegFileAlt } from "react-icons/fa";
@@ -19,11 +21,7 @@ export default function App() {
       {/* Navbar */}
       
       <div className="navbar">
-        <img
-          src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/482007459_1712508726364891_2398452589159385950_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGx8_npaF0zQLcA0dfHZFMSLIyo9uEEHnwsjKj24QQefB5Gl6ARgK8MAkU_JMOW7kKQnStG8mK8MwePF_H0SnNL&_nc_ohc=DhhY59aTNRUQ7kNvwGpf-Oj&_nc_oc=AdkTpcj-fZhIm54MXymxpGXvOcjNzV5eowJsZvROwYz7Sl9DYQ81bjYbN2gDMEFlFWQ&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=Due0yUDfb5mCg_5Tj9Tr1Q&oh=00_AfJeIIuBoCWYsiAhFcLo7yzPoHoLH5JIikDBwlQnGXaCCA&oe=682685CF"
-          alt="avatar"
-          className="avatar-nav"
-        />
+        <img src={datlatao} alt="avatar" className="avatar-nav" />
         <ul className="nav-list">
           <li className="nav-item">
             <a href="#about">About</a>
