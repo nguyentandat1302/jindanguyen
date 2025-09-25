@@ -28,11 +28,11 @@ body {
 /* NAVBAR */
 .navbar {
   position: fixed;
-  top: 40px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   background: #f2f2f2;
-  padding: 16px 24px;
+  padding: 12px 20px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -40,11 +40,12 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   z-index: 1000;
   backdrop-filter: blur(10px);
+  flex-wrap: wrap;
 }
 
 .avatar-nav {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -52,10 +53,12 @@ body {
 
 .nav-list {
   display: flex;
-  gap: 18px;
+  gap: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-item {
@@ -76,33 +79,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 32px 40px;
+  padding: 120px 32px 40px;
   width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  gap: 20px;
 }
 
 .hero-left {
   flex: 1;
   text-align: center;
-  padding: 32px;
-  box-sizing: border-box;
+  padding: 16px;
 }
 
 .hero-left h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   animation: slideInLeft 2s ease-out;
 }
 
 .hero-left h2 {
-  font-size: 20px;
+  font-size: 22px;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   animation: slideInRight 1s ease-out;
 }
 
 .hero-left p {
-  font-size: 14px;
+  font-size: 16px;
   color: #444;
   margin-bottom: 20px;
   animation: slideInRight 1s ease-out;
@@ -116,8 +121,8 @@ body {
 /* ICONS */
 .icons {
   display: flex;
-  gap: 20px;
-  font-size: 20px;
+  gap: 18px;
+  font-size: 22px;
   justify-content: center;
   animation: slideInRight 1s ease-out;
 }
@@ -137,12 +142,11 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 32px;
-  box-sizing: border-box;
+  padding: 16px;
 }
 
 .hero-right img {
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   border-radius: 8px;
   object-fit: cover;
@@ -152,31 +156,68 @@ body {
 .section {
   width: 100%;
   max-width: 1024px;
-  padding: 64px 32px;
+  padding: 64px 20px;
   box-sizing: border-box;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
+/* =================== Responsive =================== */
+
+/* Tablet */
+@media screen and (max-width: 992px) {
   .hero {
     flex-direction: column;
+    padding-top: 140px;
   }
 
-  .hero-left,
-  .hero-right {
-    padding: 16px;
+  .hero-left h1 {
+    font-size: 32px;
   }
 
+  .hero-left h2 {
+    font-size: 18px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .hero-right img {
+    max-width: 320px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
   .navbar {
-    flex-wrap: wrap;
-    padding: 10px;
+    flex-direction: column;
     gap: 10px;
+    padding: 8px 12px;
+    border-radius: 16px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero-left h1 {
+    font-size: 26px;
+  }
+
+  .hero-left h2 {
+    font-size: 15px;
+  }
+
+  .hero-left p {
+    font-size: 13px;
+  }
+
+  .hero-right img {
+    max-width: 220px;
   }
 }
 
 /* ANIMATIONS */
-
-
 @keyframes slideInRight {
   0% {
     opacity: 0;
@@ -187,6 +228,7 @@ body {
     transform: translateX(0);
   }
 }
+
 .jin-title span {
   display: inline-block;
   opacity: 0;
