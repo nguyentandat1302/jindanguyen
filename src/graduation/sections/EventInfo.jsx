@@ -94,7 +94,7 @@ export default function EventInfo() {
             </div>
 
             <Row label="Thời gian"  value={PROFILE.graduationDateLong} />
-            <Row label="Buổi"       value="08:00 sáng" />
+            <Row label="Thời gian"   value="13:30 chiều" />
             <Row label="Địa điểm"   value={PROFILE.venue.name} />
             <Row label="Địa chỉ"    value={PROFILE.venue.address} />
 
