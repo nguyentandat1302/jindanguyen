@@ -2,7 +2,10 @@ import { PROFILE } from '../utils/config';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gold-500/15 py-12 px-6 md:px-12 text-center bg-ink-950">
+    <footer
+      className="border-t border-gold-500/15 py-12 px-6 md:px-12 text-center"
+      style={{ background: 'linear-gradient(180deg, #010d22 0%, #021a3d 100%)' }}
+    >
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="font-sans text-xs tracking-[0.3em] uppercase text-ink-200">
           © {new Date().getFullYear()} · {PROFILE.fullName}

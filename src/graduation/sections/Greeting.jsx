@@ -5,8 +5,11 @@ export default function Greeting() {
   return (
     <section
       ref={ref}
-      className="relative py-32 md:py-48 px-6 md:px-16 max-w-6xl mx-auto"
+      className="relative py-32 md:py-48 px-6 md:px-16 max-w-6xl mx-auto overflow-hidden"
     >
+      <div className="absolute inset-0 pointer-events-none -z-10"
+        style={{ background: 'radial-gradient(ellipse at 50% 60%, rgba(26,83,138,0.08) 0%, transparent 60%)' }}
+      />
       <div className="text-center mb-12">
         <div className="reveal-fade font-serif italic text-gold-400 text-xs md:text-sm tracking-[0.4em] uppercase">
           — Đôi lời ngỏ —

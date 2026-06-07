@@ -62,7 +62,12 @@ export default function Hero() {
 
       {/* Vignette */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at center, transparent 30%, rgba(5,5,7,0.7) 80%)' }}
+        style={{ background: 'radial-gradient(ellipse at center, transparent 30%, rgba(1,13,34,0.75) 80%)' }}
+      />
+
+      {/* Blue ambient bloom */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse at 50% 60%, rgba(26,83,138,0.18) 0%, transparent 55%)' }}
       />
 
       {/* Top corner ornament */}
@@ -88,7 +93,7 @@ export default function Hero() {
           <h1
             id="hero-name"
             className="font-display text-[15vw] md:text-[10vw] leading-[0.95] text-ink-50 tracking-tight"
-            style={{ textShadow: '0 0 60px rgba(212,175,55,0.35), 0 0 120px rgba(212,175,55,0.15)' }}
+            style={{ textShadow: '0 0 60px rgba(212,175,55,0.35), 0 0 120px rgba(212,175,55,0.15), 0 0 200px rgba(26,83,138,0.2)' }}
           >
             {PROFILE.fullName}
           </h1>

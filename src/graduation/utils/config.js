@@ -6,9 +6,9 @@ export const PROFILE = {
   universityShort: 'TDMU',
   faculty: 'Khoa Kỹ Thuật – Công Nghệ',
   major: 'Công Nghệ Thông Tin',
-  graduationDate: '2026-07-17T08:00:00+07:00', // 17/07/2026 — 08:00 ICT
-  graduationDateDisplay: '17 · 07 · 2026',
-  graduationDateLong: 'Thứ Sáu, ngày 17 tháng 07 năm 2026',
+  graduationDate: '2026-06-22T08:00:00+07:00', // 22/06/2026 — 08:00 ICT
+  graduationDateDisplay: '22 · 06 · 2026',
+  graduationDateLong: 'Thứ Hai, ngày 22 tháng 06 năm 2026',
   venue: {
     name: 'Hội trường Trường Đại học Thủ Dầu Một',
     address: '06 Trần Văn Ơn, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương',
@@ -58,7 +58,7 @@ export const JOURNEY = [
   {
     year: '2026',
     title: 'Lễ tốt nghiệp',
-    text: '17/07/2026 — ngày khép lại một hành trình, mở ra một chương mới.',
+    text: '22/06/2026 — ngày khép lại một hành trình, mở ra một chương mới.',
   },
 ];
 

@@ -5,7 +5,6 @@ import Loader from './sections/Loader';
 import Hero from './sections/Hero';
 import Greeting from './sections/Greeting';
 import Journey from './sections/Journey';
-import Thesis from './sections/Thesis';
 import EventInfo from './sections/EventInfo';
 import Gallery from './sections/Gallery';
 import RSVP from './sections/RSVP';
@@ -34,7 +33,6 @@ export default function GraduationInvite() {
           <Hero />
           <Greeting />
           <Journey />
-          <Thesis />
           <EventInfo />
           <Gallery />
           <RSVP />
